@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+:root{
+    --main-margin: 5px;
+    --main-radius: 10px;
+    --main--height: 100vh;
+    --main-gap: 0.3rem
+}
+body{
+    height: 200vh;
+}
+
+.conteiner{
+    display: grid;
+    height: var(--main--height);
+    grid-template-columns: 0.5fr 2fr 2fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 0.8fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header header"
+    "sidebar colum1 colum1 colum2 colum2"
+    "sidebar colum1 colum1 colum2 colum2"
+    "sidebar colum1 colum1 content1 content2"
+    "sidebar content3 content4 content5 content5";
+    grid-gap: var(--main-gap);
+    margin: var(--main-margin);
+    color: white;
+}
+
+.cabecalho{
+    background: #1C1C1C;
+    grid-area: header;
+}
+
+.sidebar{
+    background: #363636;
+    grid-area: sidebar;
+}
+
+.colum1{
+    background: #696969;
+    grid-area: colum1;
+}
+
+.colum2{
+    background: #828282;
+    grid-area: colum2;
+}
+
+.content1{
+    background: #9C9C9C;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+}
+
+.content2{
+    background:#00BFFF;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+}
+
+.content3{
+    background: #1C86EE;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+}
+
+.content4{
+    background: #009ACD;
+    grid-area: content4;
+    border-radius: var(--main-radius);
+}
+
+.content5{
+    background: #00688B;
+    grid-area: content5;
+    border-radius: var(--main-radius);
+}
+.colum1{
+    display: grid;
+    height: 100%;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 0.2fr 0.2fr 0.2fr  0.2fr  0.2fr  0.2fr 0.2fr  0.2fr  0.2fr ;
+    grid-template-areas: 
+    "linha1 linha1 linha1"
+    "linha2 linha2 linha2"
+    "linha3 linha3 linha3"
+    "linha4 linha4 linha4"
+    "linha5 linha5 linha5"
+    "linha6 linha6 linha6"
+    "linha7 linha7 linha7"
+    "linha8 linha8 linha8"
+    "linha9 linha9 linha9";
+    grid-gap: var(--main-gap);
+}
+
+.linha1{background: #00688B; grid-area: linha1;  border-radius: var(--main-radius);}
+.linha2{background: #009ACD; grid-area: linha2;  border-radius: var(--main-radius);}
+.linha3{background: #00BFFF; grid-area: linha3;  border-radius: var(--main-radius);}
+.linha4{background: #1C1C1C; grid-area: linha4;  border-radius: var(--main-radius);}
+.linha5{background: #1C86EE; grid-area: linha5;  border-radius: var(--main-radius);}
+.linha6{background: #363636; grid-area: linha6;  border-radius: var(--main-radius);}
+.linha7{background: #00688B; grid-area: linha7;  border-radius: var(--main-radius);}
+.linha8{background: #009ACD; grid-area: linha8;  border-radius: var(--main-radius);}
+.linha9{background: #00BFFF; grid-area: linha9;  border-radius: var(--main-radius);}
+
+.colum2{
+    display: grid;
+    height: 100%;
+    padding: 5px;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+     grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr ; 
+    grid-template-areas:
+    'quadrado1 quadrado2 quadrado3'
+    'quadrado5 quadrado6 quadrado7'
+    'quadrado9 quadrado10 quadrado11'
+    'quadrado13 quadrado14 quadrado15';
+    grid-gap: var(--main-gap);
+   
+}
+
+.quadrado1{background: #00688B; grid-area: quadrado1; border-radius: var(--main-radius);}
+.quadrado2{background: #009ACD; grid-area: quadrado2; border-radius: var(--main-radius);}
+.quadrado3{background: #00BFFF; grid-area: quadrado3; border-radius: var(--main-radius);}
+
+.quadrado5{background: #1C86EE; grid-area: quadrado5; border-radius: var(--main-radius);}
+.quadrado6{background: #363636; grid-area: quadrado6; border-radius: var(--main-radius);}
+.quadrado7{background: #00688B; grid-area: quadrado7; border-radius: var(--main-radius);}
+
+.quadrado9{background: #00BFFF; grid-area: quadrado9; border-radius: var(--main-radius);}
+.quadrado10{background: #00BFFF; grid-area: quadrado10; border-radius: var(--main-radius);}
+.quadrado11{background: #1C1C1C; grid-area: quadrado11; border-radius: var(--main-radius);}
+
+.quadrado13{background: #363636; grid-area: quadrado13; border-radius: var(--main-radius);}
+.quadrado14{background: #00688B; grid-area: quadrado14; border-radius: var(--main-radius);}
+.quadrado15{background: #009ACD; grid-area: quadrado15; border-radius: var(--main-radius);}
